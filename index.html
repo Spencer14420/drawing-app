@@ -14,11 +14,11 @@
     <div id="tools">
         <span>
             <span>Brush size:</span>
-            <input type="range" min="5" max="100" value="25" id="sizePicker" />
+            <input type="range" min="5" max="100" value="25" id="sizePicker" onchange="brush.update()" />
         </span>
         <span>
             <span>Colour:</span>
-            <input type="color" value="#3355cc" id="colourPicker" />
+            <input type="color" value="#3355cc" id="colourPicker" onchange="brush.update()" />
         </span>
     </div>
     <div id="canvas">

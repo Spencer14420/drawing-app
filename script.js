@@ -11,6 +11,10 @@ let brush = {
             "height": this.size, "width": this.size
         });
     },
+    update: function() {
+        this.size = $("#sizePicker").val();
+        this.colour = $("#colourPicker").val()
+    },
     placeSplotch: function () {
         // Put a dot where the user clicks.
         $("#canvas").append('<div class="splotch" style="position:absolute; left:'
